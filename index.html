@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -40,15 +43,15 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-text">
-                    <p class="greeting">Hello, I'm</p>
-                    <h1 class="hero-title">Minusha Nimsara</h1>
-                    <h2 class="hero-subtitle">Software Engineer</h2>
-                    <p class="hero-description">
+                <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                    <p class="greeting" data-aos="fade-down" data-aos-delay="100">Hello, I'm</p>
+                    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">Minusha Nimsara</h1>
+                    <h2 class="hero-subtitle"><span id="typed-text"></span></h2>
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
                         Passionate about creating innovative software solutions with expertise in 
                         Full-Stack Development, Mobile Applications, and AI Technologies.
                     </p>
-                    <div class="hero-buttons">
+                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
                         <a href="#contact" class="btn btn-primary">
                             <i class="fas fa-envelope"></i> Get In Touch
                         </a>
@@ -56,7 +59,7 @@
                             <i class="fas fa-code"></i> View Projects
                         </a>
                     </div>
-                    <div class="social-links">
+                    <div class="social-links" data-aos="fade-up" data-aos-delay="800">
                         <a href="https://github.com/MinushaNimsara" target="_blank" class="social-icon">
                             <i class="fab fa-github"></i>
                         </a>
@@ -68,9 +71,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="hero-image">
+                <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                     <div class="image-container">
-                        <!-- Replace 'profile.jpg' with your image -->
                         <img src="profile.jpg" alt="Minusha Nimsara">
                         <div class="image-border"></div>
                     </div>
@@ -87,53 +89,53 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
             <div class="about-content">
-                <div class="about-text">
-                    <p>
+                <div class="about-text" data-aos="fade-right" data-aos-duration="1000">
+                    <p data-aos="fade-up" data-aos-delay="100">
                         I'm a passionate Software Engineer currently pursuing my BSc (Hons) in Software Engineering 
                         at ICBT Campus, Colombo. With a strong foundation in both frontend and backend development, 
                         I specialize in creating efficient, scalable, and user-friendly applications.
                     </p>
-                    <p>
+                    <p data-aos="fade-up" data-aos-delay="200">
                         My journey in software development has equipped me with expertise in multiple programming 
                         languages and frameworks. I'm particularly interested in AI technologies, mobile app 
                         development, and building robust web applications that solve real-world problems.
                     </p>
-                    <p>
+                    <p data-aos="fade-up" data-aos-delay="300">
                         When I'm not coding, you can find me playing rugby, swimming, or contributing to 
                         community service initiatives. I believe in continuous learning and staying updated 
                         with the latest technology trends.
                     </p>
                     <div class="about-info">
-                        <div class="info-item">
+                        <div class="info-item" data-aos="zoom-in" data-aos-delay="100">
                             <i class="fas fa-map-marker-alt"></i>
                             <span>Ratnapura, Sri Lanka</span>
                         </div>
-                        <div class="info-item">
+                        <div class="info-item" data-aos="zoom-in" data-aos-delay="200">
                             <i class="fas fa-graduation-cap"></i>
                             <span>BSc (Hons) Software Engineering</span>
                         </div>
-                        <div class="info-item">
+                        <div class="info-item" data-aos="zoom-in" data-aos-delay="300">
                             <i class="fas fa-briefcase"></i>
                             <span>Software Engineer</span>
                         </div>
                     </div>
                 </div>
                 <div class="about-stats">
-                    <div class="stat-card">
+                    <div class="stat-card" data-aos="flip-left" data-aos-delay="100">
                         <i class="fas fa-project-diagram"></i>
-                        <h3>7+</h3>
+                        <h3 class="counter" data-target="7">0</h3>
                         <p>Projects Completed</p>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card" data-aos="flip-left" data-aos-delay="200">
                         <i class="fas fa-code"></i>
-                        <h3>10+</h3>
+                        <h3 class="counter" data-target="10">0</h3>
                         <p>Technologies</p>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card" data-aos="flip-left" data-aos-delay="300">
                         <i class="fas fa-database"></i>
-                        <h3>5+</h3>
+                        <h3 class="counter" data-target="5">0</h3>
                         <p>Database Systems</p>
                     </div>
                 </div>
@@ -142,98 +144,98 @@
     </section>
 
     <!-- Skills Section -->
-<section id="skills" class="skills">
-    <div class="container">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid">
-            
-            <!-- Programming Languages -->
-            <div class="skill-category">
-                <h3><i class="fas fa-code"></i> Programming Languages</h3>
-                <div class="skill-items">
-                    <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
-                    <span class="skill-tag"><i class="fas fa-code"></i> C++</span>
-                    <span class="skill-tag"><i class="fas fa-hashtag"></i> C#</span>
-                    <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
-                    <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+            <div class="skills-grid">
+                
+                <!-- Programming Languages -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
+                        <span class="skill-tag"><i class="fas fa-code"></i> C++</span>
+                        <span class="skill-tag"><i class="fas fa-hashtag"></i> C#</span>
+                        <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Web Development -->
-            <div class="skill-category">
-                <h3><i class="fas fa-globe"></i> Web Development</h3>
-                <div class="skill-items">
-                    <span class="skill-tag"><i class="fab fa-html5"></i> HTML</span>
-                    <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS</span>
-                    <span class="skill-tag"><i class="fab fa-php"></i> PHP</span>
-                    <span class="skill-tag"><i class="fab fa-node-js"></i> Node.js</span>
-                    <span class="skill-tag"><i class="fas fa-leaf"></i> Spring Boot</span>
-                    <span class="skill-tag"><i class="fab fa-react"></i> React</span>
+                <!-- Web Development -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-globe"></i> Web Development</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag"><i class="fab fa-html5"></i> HTML</span>
+                        <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS</span>
+                        <span class="skill-tag"><i class="fab fa-php"></i> PHP</span>
+                        <span class="skill-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="skill-tag"><i class="fas fa-leaf"></i> Spring Boot</span>
+                        <span class="skill-tag"><i class="fab fa-react"></i> React</span>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Mobile Development -->
-            <div class="skill-category">
-                <h3><i class="fas fa-mobile-alt"></i> Mobile Development</h3>
-                <div class="skill-items">
-                    <span class="skill-tag"><i class="fas fa-mobile"></i> Flutter</span>
-                    <span class="skill-tag"><i class="fab fa-android"></i> Android Studio</span>
+                <!-- Mobile Development -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="fas fa-mobile-alt"></i> Mobile Development</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag"><i class="fas fa-mobile"></i> Flutter</span>
+                        <span class="skill-tag"><i class="fab fa-android"></i> Android Studio</span>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Databases -->
-            <div class="skill-category">
-                <h3><i class="fas fa-database"></i> Databases</h3>
-                <div class="skill-items">
-                    <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
-                    <span class="skill-tag"><i class="fas fa-fire"></i> Firebase</span>
-                    <span class="skill-tag"><i class="fas fa-database"></i> PostgreSQL</span>
-                    <span class="skill-tag"><i class="fas fa-leaf"></i> MongoDB</span>
-                    <span class="skill-tag"><i class="fas fa-database"></i> SQLite</span>
+                <!-- Databases -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="skill-tag"><i class="fas fa-fire"></i> Firebase</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> PostgreSQL</span>
+                        <span class="skill-tag"><i class="fas fa-leaf"></i> MongoDB</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> SQLite</span>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Tools & IDEs -->
-            <div class="skill-category">
-                <h3><i class="fas fa-tools"></i> Tools & IDEs</h3>
-                <div class="skill-items">
-                    <span class="skill-tag"><i class="fas fa-code"></i> Visual Studio</span>
-                    <span class="skill-tag"><i class="fas fa-code"></i> IntelliJ</span>
-                    <span class="skill-tag"><i class="fas fa-code"></i> NetBeans</span>
-                    <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
-                    <span class="skill-tag"><i class="fas fa-server"></i> VMware</span>
-                    <span class="skill-tag"><i class="fas fa-code"></i> VS Code</span>
-                    <span class="skill-tag"><i class="fas fa-map-marked-alt"></i> QGIS</span>
+                <!-- Tools & IDEs -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+                    <h3><i class="fas fa-tools"></i> Tools & IDEs</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag"><i class="fas fa-code"></i> Visual Studio</span>
+                        <span class="skill-tag"><i class="fas fa-code"></i> IntelliJ</span>
+                        <span class="skill-tag"><i class="fas fa-code"></i> NetBeans</span>
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="skill-tag"><i class="fas fa-server"></i> VMware</span>
+                        <span class="skill-tag"><i class="fas fa-code"></i> VS Code</span>
+                        <span class="skill-tag"><i class="fas fa-map-marked-alt"></i> QGIS</span>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Languages -->
-            <div class="skill-category">
-                <h3><i class="fas fa-language"></i> Languages</h3>
-                <div class="skill-items">
-                    <span class="skill-tag"><i class="fas fa-globe"></i> English - Fluent</span>
-                    <span class="skill-tag"><i class="fas fa-flag"></i> Sinhala - Native</span>
-                    <span class="skill-tag"><i class="fas fa-globe-asia"></i> Tamil - Basic</span>
+                <!-- Languages -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="600">
+                    <h3><i class="fas fa-language"></i> Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag"><i class="fas fa-globe"></i> English - Fluent</span>
+                        <span class="skill-tag"><i class="fas fa-flag"></i> Sinhala - Native</span>
+                        <span class="skill-tag"><i class="fas fa-globe-asia"></i> Tamil - Basic</span>
+                    </div>
                 </div>
+                
             </div>
-            
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
             <div class="projects-grid">
                 
                 <!-- Project 1 -->
-                <div class="project-card">
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
                     <div class="project-image">
                         <img src="project1.jpg" alt="Safari Beyond Website">
                         <div class="project-overlay">
                             <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/MinushaNimsara/The-Safari-Beyond-Website" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/MinushaNimsara/The-Safari-Beyond-Website" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
@@ -251,12 +253,12 @@
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-card">
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
                     <div class="project-image">
                         <img src="project2.jpg" alt="MegaCityCab">
                         <div class="project-overlay">
                             <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/MinushaNimsara/MegaCityCabSystem" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/MinushaNimsara/MegaCityCabSystem" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
@@ -293,12 +295,12 @@
                 </div>
 
                 <!-- Project 4 -->
-                <div class="project-card">
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
                     <div class="project-image">
                         <img src="project4.jpg" alt="Employee Management">
                         <div class="project-overlay">
                             <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/MinushaNimsara/Emplloyee-management-system" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/MinushaNimsara/Emplloyee-management-system" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
@@ -314,12 +316,12 @@
                 </div>
 
                 <!-- Project 5 -->
-                <div class="project-card">
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="500">
                     <div class="project-image">
                         <img src="project5.jpg" alt="AI Humanizer">
                         <div class="project-overlay">
                             <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/MinushaNimsara/AI_Humanizer" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/MinushaNimsara/AI_Humanizer" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
@@ -334,27 +336,26 @@
                     </div>
                 </div>
 
-               <!-- Project 6: TechFix - With Image --> 
-
-               <div class="project-card">
-                <div class="project-image">
-                    <img src="project6.jpg" alt="TechFix">
-                    <div class="project-overlay">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                        <a href="https://github.com/MinushaNimsara/TechFix" class="project-link"><i class="fab fa-github"></i></a>
+                <!-- Project 6 -->
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="project-image">
+                        <img src="project6.jpg" alt="TechFix">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/MinushaNimsara/TechFix" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-badge">Management System</span>
+                        <h3>TechFix Computer Shop</h3>
+                        <p>Comprehensive inventory management system for computer shop with stock tracking, sales management, customer records, and automated reporting features.</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-java"></i> Java</span>
+                            <span><i class="fas fa-database"></i> MySQL</span>
+                            <span><i class="fas fa-desktop"></i> JavaFX</span>
+                        </div>
                     </div>
                 </div>
-                <div class="project-content">
-                    <span class="project-badge">Management System</span>
-                    <h3>TechFix Computer Shop</h3>
-                    <p>Comprehensive inventory management system for computer shop with stock tracking, sales management, customer records, and automated reporting features.</p>
-                    <div class="project-tech">
-                        <span><i class="fab fa-java"></i> Java</span>
-                        <span><i class="fas fa-database"></i> MySQL</span>
-                        <span><i class="fas fa-desktop"></i> JavaFX</span>
-                    </div>
-                </div>
-            </div>
 
             </div>
         </div>
@@ -363,10 +364,10 @@
     <!-- Education Section -->
     <section id="education" class="education">
         <div class="container">
-            <h2 class="section-title">Education</h2>
+            <h2 class="section-title" data-aos="fade-up">Education</h2>
             <div class="timeline">
                 
-                <div class="timeline-item">
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">2024 - 2026 (Expected)</span>
@@ -376,7 +377,7 @@
                     </div>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">2024</span>
@@ -386,7 +387,7 @@
                     </div>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">2019 - 2022</span>
@@ -401,121 +402,121 @@
     </section>
 
     <!-- Contact Section -->
-<section id="contact" class="contact">
-    <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="section-subtitle">Have a project in mind? Let's work together!</p>
-        
-        <div class="contact-content">
-            <!-- Contact Information -->
-            <div class="contact-info">
-                <div class="contact-intro">
-                    <h3>Let's work together</h3>
-                    <p>Got a project in mind or just want to chat? Feel free to reach out. I'm always open to new opportunities and collaborations.</p>
-                </div>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Have a project in mind? Let's work together!</p>
+            
+            <div class="contact-content">
+                <!-- Contact Information -->
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="contact-intro">
+                        <h3>Let's work together</h3>
+                        <p>Got a project in mind or just want to chat? Feel free to reach out. I'm always open to new opportunities and collaborations.</p>
+                    </div>
 
-                <div class="contact-details">
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
+                    <div class="contact-details">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+94 70 144 9952</p>
+                            </div>
                         </div>
-                        <div class="contact-text">
-                            <h4>Phone</h4>
-                            <p>+94 70 144 9952</p>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>minushanimsara37@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Kambadola, Dela, Ratnapura</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="contact-card">
-                        <div class="contact-icon">
+                    <div class="contact-socials">
+                        <a href="https://linkedin.com/in/minushanimsara" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/MinushaNimsara" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:minushanimsara37@gmail.com" class="social-link">
                             <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Email</h4>
-                            <p>minushanimsara37@gmail.com</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Location</h4>
-                            <p>Kambadola, Dela, Ratnapura</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
-                <div class="contact-socials">
-                    <a href="https://linkedin.com/in/minushanimsara" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/MinushaNimsara" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:minushanimsara37@gmail.com" class="social-link">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
+                <!-- Contact Form with Formspree -->
+                <div class="contact-form-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                    <form action="https://formspree.io/f/mrbegglp" method="POST" class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" 
+                                       id="name" 
+                                       name="name" 
+                                       class="form-input" 
+                                       placeholder="Full Name" 
+                                       required>
+                            </div>
 
-            <!-- Contact Form with Formspree -->
-            <div class="contact-form-wrapper">
-                <form action="https://formspree.io/f/mrbegglp" method="POST" class="contact-form" id="contactForm">
-                    <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" 
+                                       id="email" 
+                                       name="email" 
+                                       class="form-input" 
+                                       placeholder="your.email@gmail.com" 
+                                       required>
+                            </div>
+                        </div>
+
                         <div class="form-group">
-                            <label for="name">Your Name</label>
+                            <label for="subject">Subject</label>
                             <input type="text" 
-                                   id="name" 
-                                   name="name" 
+                                   id="subject" 
+                                   name="subject" 
                                    class="form-input" 
-                                   placeholder="Full Name" 
+                                   placeholder="Project Subject" 
                                    required>
                         </div>
 
                         <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" 
-                                   id="email" 
-                                   name="email" 
-                                   class="form-input" 
-                                   placeholder="your.email@gmail.com" 
-                                   required>
+                            <label for="message">Your Message</label>
+                            <textarea id="message" 
+                                      name="message" 
+                                      class="form-input" 
+                                      placeholder="Tell me about your project..." 
+                                      rows="5" 
+                                      required></textarea>
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" 
-                               id="subject" 
-                               name="subject" 
-                               class="form-input" 
-                               placeholder="Project Subject" 
-                               required>
-                    </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
 
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" 
-                                  name="message" 
-                                  class="form-input" 
-                                  placeholder="Tell me about your project..." 
-                                  rows="5" 
-                                  required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary submit-btn">
-                        <span>Send Message</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-
-                    <!-- Success/Error Messages -->
-                    <div class="form-status" id="formStatus"></div>
-                </form>
+                        <!-- Success/Error Messages -->
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -560,6 +561,12 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Typed.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
     <script src="script.js"></script>
 </body>
 </html>
